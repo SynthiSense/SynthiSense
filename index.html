@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synthisense - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="videos.html">YouTube Videos</a></li>
+            <li><a href="aitools.html">AI Tools</a></li>
+            <li><a href="#" onclick="openPopup()">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Homepage Content -->
+    <section class="homepage-content">
+        <div class="image-section slide-in-left">
+            <img src="Screenshot 2024-09-26 142825.png" alt="Sample Image">
+        </div>
+        <div class="text-section slide-in-right">
+            <h1>Welcome to Synthisense!</h1>
+            <p>
+                Synthisense is your go-to platform for unlocking the power of AI tools and hacks. 
+                Discover how AI can simplify daily tasks, enhance creativity, and optimize workflow.
+                Join us as we explore the future with AI and its transformative capabilities!
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Us Popup -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <div class="popup-left">
+                <h2>Share Some Hack</h2>
+                <p>If you’ve got some AI hacks or tips, share them with us at:</p>
+                <p>Email: hack@synthisense.com</p>
+            </div>
+            <div class="popup-right">
+                <h2>Have Any Issue?</h2>
+                <p>Encountering an issue or need help? Contact us here:</p>
+                <p>Email: support@synthisense.com</p>
+            </div>
+        </div>
+        <span class="close" onclick="closePopup()">&times;</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

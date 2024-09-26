@@ -1,0 +1,197 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e6e1f5;
+    color: #3d2a68;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #3d2a68;
+    padding: 15px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #e6e1f5;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #d1a4ff;
+}
+
+/* Homepage Content */
+.homepage-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.image-section img {
+    width: 300px;
+}
+
+.text-section {
+    width: 60%;
+}
+
+.text-section h1 {
+    color: #3d2a68;
+}
+
+.text-section p {
+    font-size: 18px;
+}
+
+/* Slide-in Animations */
+.slide-in-left {
+    animation: slideInFromLeft 1s ease-in-out;
+}
+
+.slide-in-right {
+    animation: slideInFromRight 1s ease-in-out;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+/* YouTube Videos Page */
+.videos-content h2 {
+    color: #3d2a68;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.dynamic-table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.dynamic-table th, .dynamic-table td {
+    padding: 10px;
+    border: 1px solid #3d2a68;
+    text-align: center;
+}
+
+.dynamic-table th {
+    background-color: #3d2a68;
+    color: white;
+}
+
+.dynamic-table td {
+    background-color: #e6e1f5;
+}
+
+.dynamic-table td a {
+    color: #3d2a68;
+    text-decoration: none;
+}
+
+.dynamic-table td a:hover {
+    color: #d1a4ff;
+}
+
+/* AI Tools Page */
+.aitools-content h2 {
+    text-align: center;
+    color: #3d2a68;
+}
+
+.tool-section {
+    background-color: #f5f3ff;
+    padding: 15px;
+    margin: 20px 0;
+    border: 1px solid #3d2a68;
+}
+
+.tool-section h3 {
+    color: #3d2a68;
+}
+
+.tool-section p a {
+    color: #3d2a68;
+    text-decoration: none;
+}
+
+.tool-section p a:hover {
+    color: #d1a4ff;
+}
+
+/* Popup Styles */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    display: flex;
+    width: 60%;
+    background-color: #f5f3ff;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.popup-left, .popup-right {
+    width: 50%;
+    padding: 20px;
+}
+
+.popup-left h2, .popup-right h2 {
+    color: #3d2a68;
+}
+
+.popup-left p, .popup-right p {
+    color: #3d2a68;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
